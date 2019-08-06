@@ -1,0 +1,26 @@
+﻿@using SQL.Models;
+@{
+    List<Suppliers> supplier = ViewBag.supplier;
+ }
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>名稱1</th>
+            <th>名稱2</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (Suppliers suppliers in supplier)
+        {
+            <tr>
+                <th>@suppliers.CompanyName</th>
+                <th>@suppliers.ContactName</th>
+                <th>
+                <th>
+            </tr>
+        }
+
+    </tbody>
+</table>
